@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BUILDING</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <!-- ----------------NAV BAR---------------------- -->
+        <section class="nav-bar">
+            <nav>
+                <div class="wow fadeInLeft">
+                    <img src="/images/SVG/Logo Final (1).png" class="logo">
+                </div>
+                <div class="hz-menu wow zoomInDown">
+                    <ul>
+                        <li>
+                            <a href="#active">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">PRODUCT</a>
+                        </li>
+                        <li>
+                            <a href="#">COURSES</a>
+                        </li>
+                        <!-- ---------------NAV BAR DROPDOWN----------------- -->
+                        <li class="dropdown">
+                            <div class="dropbtn">
+                                <a href="#">ABOUT US</a>
+                                <div class="dropdown__arrow">
+                                    <img src="/images/icons/dropdown_arrow.svg" alt="">
+                                </div>
+                            </div>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#">COMPANY</a>
+                                </li>
+                                <li>
+                                    <a href="#">BLOGS</a>
+                                </li>
+                                <li>
+                                    <a href="#">PROJECT GALLERY</a>
+                                </li>
+                                <li>
+                                    <a href="#">TESTIMONIALS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <div class="dropbtn">
+                                <a href="">SUPPORT</a>
+                                <div class="dropdown__arrow">
+                                    <img src="/images/icons/dropdown_arrow.svg" alt="">
+                                </div>
+                            </div>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#">PARTNERSHIP</a>
+                                </li>
+                                <li>
+                                    <a href="#">CONTACT</a>
+                                </li>
+                                <li>
+                                    <a href="#">CURRICULUM</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ---------------NAV BAR DROPDOWN----------------- -->
+                <div class="icons wow fadeInRight">
+                    <div id="myOverlay" class="overlay">
+                        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                        <div class="overlay-content">
+                            <form action="">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="openBtn" onclick="openSearch()">
+                        <i class="fa-solid fa-magnifying-glass fa-spin"></i>
+                    </div>
+                    <a href="">
+                        <i class="fa-brands fa-shopify fa-bounce"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-user-plus fa-beat"></i>
+                    </a>
+                </div>
+            </nav>
+        </section>
+        <!-- ----------------NAV BAR---------------------- -->
+        <!-- ----------------BANNER---------------------- -->
+        <section id="banner">
+            <video autoplay loop muted>
+                <source src="/images/videos/video.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <div class="text">
+                    <h1 class="wow fadeInLeft">SHAPING YOUNG MINDS</h1>
+                    <div class="small-text">
+                        <div class="line"></div>
+                        <h3 class="wow fadeInRight">The Future Belongs To Those Who See Possibilities Today</h3>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="wow zoomInDown">
+                    <button class="cta">
+                        <span>ENROLL NOW</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------BANNER---------------------- -->
+        <!-- ---------------COURSES----------------- -->
+        <section id="courses">
+            <img src="/images/courses/lego 1.svg" class="top-left">
+            <header>
+                <h2 class="wow zoomInDown ">
+                    <b>Our Courses</b>
+                </h2>
+            </header>
+            <div class="courses">
+                <div class="course-item wow fadeInLeft">
+                    <a href="">
+                        <img src="/images/courses/makeblock.png" alt="">
+                        Makeblock
+                    </a>
+                </div>
+                <div class="course-item wow fadeInDown">
+                    <a href="">
+                        <img src="/images/courses/python.png" alt="">
+                        Python
+                    </a>
+                </div>
+                <div class="course-item wow fadeInDown">
+                    <a href="">
+                        <img src="/images/courses/scratch.png" alt="">
+                        Scratch by MIT
+                    </a>
+                </div>
+                <div class="course-item wow fadeInRight">
+                    <a href="">
+                        <img src="/images/courses/arduino.png" alt="">
+                        Arduino
+                    </a>
+                </div>
+            </div>
+            <img src="/images/courses/lego 2.svg" class="bottom-right" alt="">
+        </section>
+        <!-- ---------------COURSES----------------- -->
+        <!-- ---------------WHO WE ARE----------------- -->
+        <section class="who-we-are">
+            <div class="left-container">
+                <header>
+                    <h2 class="wow fadeInLeft">
+                        <b>Who We Are</b>
+                    </h2>
+                    <h4 class="wow fadeInRight">
+                        Our Story
+                    </h4>
+                </header>
+                <p class="wow fadeInDown">
+                    NaN Robotics Computing was incorporated with the ideology
+                    <br>
+                    of teaching the young generation about STEM – Robotics, through
+                    <br>
+                    something they will love, create and play. We want the children
+                    <br>
+                    to know that their ideas and creations can be limitless. We want
+                    <br>
+                    them to explore with what they have in mind and what they can
+                    <br>
+                    create with their hands.
+                </p>
+                <div class="btn-icon">
+                    <button class="button">READ MORE</button>
+                    <div class="wow zoomInDown">
+                        <img src="/images/who we are/Layer 3.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <img src="/images/who we are/who we are.jpg" alt="">
+            </div>
+        </section>
+        <!-- ---------------WHO WE ARE----------------- -->
+        <!-- ---------------PRODUCTS----------------- -->
+        <section id="products">
+            <img src="/images/bg icons/blocks 1.svg" class="top-right">
+            <header>
+                <h2 class="wow zoomInDown ">Our Featured Products</h2>
+                <h4 class="wow fadeInRight">
+                    The best robot kits & STEM Toys are here. Pick for you.
+                </h4>
+            </header>
+            <div class="owl-carousel ">
+                <!-- <div class="nextIcon">></div>
+                    <div class="prevIcon"><</div> -->
+                <a href="">
+                    <div class="cards">
+                        <div class="image-container">
+                            <img src="/images/products/Landing page/Rectangle 10.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <p>
+                                mBot Ultimate 10-in-1Robotics Kit
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cards">
+                        <div class="image-container">
+                            <img src="/images/products/Landing page/Rectangle 12.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <p>
+                                mBot2 Buildable Coding Robot
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cards">
+                        <div class="image-container">
+                            <img src="/images/products/Landing page/Rectangle 13.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <p>
+                                mTiny Smart Robotfor Preschoolers
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="view-all">
+                <button class="button">VIEW ALL</button>
+            </div>
+            <img src="/images/bg icons/python 1.svg" class="bottom-right">
+        </section>
+        <!-- ---------------PRODUCTS----------------- -->
+        <!-- ---------------WHY NAN ROBOTICS----------------- -->
+        <section class="why-nan-robotics">
+            <div>
+                <div class="left-container">
+                    <img src="/images/why nan/IMG_20200227_122734-scaled.jpg" alt="">
+                </div>
+                <div class="right-container">
+                    <header>
+                        <h2 class="wow fadeInLeft">
+                            <b>Why NaN Robotics</b>
+                        </h2>
+                        <h4 class="wow fadeInRight">
+                            Building a Passion for Robotics Learning
+                        </h4>
+                    </header>
+                    <p class="wow fadeInDown">
+                        We inspire kids ages 6 to 16 to build on their innate desire for
+                        <br>
+                        answers by exploring engineering concepts in a fun, hands-on
+                        <br>
+                        way. We offer after-school programs, evening classes, camps,
+                        <br>
+                        birthday parties, and special events designed to present kids with
+                        <br>
+                        challenging yet accessible Robotics and Engineering activities
+                        <br>
+                        from which they can learn and grow.
+                    </p>
+                    <div class="btn-icon">
+                        <!-- <button class="button">READ MORE</button> -->
+                        <div class="wow zoomInDown">
+                            <img src="/images/why nan/Group.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ---------------WHY NAN ROBOTICS----------------- -->
+        <!-- ---------------ENROL NOW----------------- -->
+        <section class="enroll-now">
+            <div class="left-container wow zoomInDown">
+                <img src="/images/SVG/Logo Final (1).png" alt="">
+            </div>
+            <div class="right-container">
+                <p class="wow fadeInDown">
+                    Enroll Now
+                    <br>
+                    And Get A Free Demo Class
+                </p>
+                <div class="enroll-btn wow fadeInUp">
+                    <button class="button">ENROLL NOW</button>
+                </div>
+            </div>
+            <div class="enroll-icons">
+                <div class="wow fadeInLeft">
+                    <img src="/images/enroll now cta icons/Group.svg" alt="">
+                </div>
+                <div class="wow fadeInRight">
+                    <img src="/images/enroll now cta icons/Group-1.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- ---------------ENROL NOW----------------- -->
+        <!-- ---------------HOW IT WORKS----------------- -->
+        <section class="how-it-works">
+            <div class="left-container">
+                <header>
+                    <h2 class="wow fadeInLeft">
+                        <b>How It Works</b>
+                    </h2>
+                    <h4 class="wow fadeInRight">
+                        Focus on being productive, instead of busy
+                    </h4>
+                </header>
+                <p class="wow fadeInDown">
+                    We inspire kids ages 6 to 16 to build on their innate desire for
+                    <br>
+                    answers by exploring engineering concepts in a fun, hands-on way
+                    <br>
+                    We offer after-school programs, evening classes, camps, birthday
+                    <br>
+                    parties, and special events designed to present kids with challenging
+                    <br>
+                    yet accessible Robotics and Engineering activities from which they
+                    <br>
+                    can learn and grow.
+                </p>
+            </div>
+            <div class="right-container">
+                <img class="infographic" src="/images/how it works/why-kids-should-learn-coding (1).jpg" alt="">
+            </div>
+        </section>
+        <!-- ---------------HOW IT WORKS----------------- -->
+        <!-- ---------------testimonials----------------- -->
+        <section class="testimonials"></section>
+        <!-- ---------------testimonials----------------- -->
+        <!-- --------------JAVASCRIPT---------------- -->
+        <script>
+            // Open the full screen search box
+            function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+            }
+
+            // Close the full screen search box
+            function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+        <script src="/wow.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+              new WOW().init();
+        </script>
+        <script>
+                    
+            const nextIcon = '<img src="/images/corousel slider icons/Landing page/Vector-1.svg">';
+            const prevIcon = '<img src="/images/corousel slider icons/Landing page/Vector.svg"r>';
+
+            $(document).ready(function() {
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                loop:true,
+                margin:100,
+                center: true,
+                nav: true,
+                navText: [
+                prevIcon,
+                nextIcon
+                ],
+                autoplay:true,
+                autoplayTimeout:2000,
+                smartSpeed:1200,
+                stagePadding:50,
+                responsive: {
+                0: {
+                    cards: 1
+                },
+                800: {
+                    cards: 2
+                },
+                1400: {
+                    cards: 2
+                }
+                }
+            });
+            
+            });
+        </script>
+    </body>
+</html>
