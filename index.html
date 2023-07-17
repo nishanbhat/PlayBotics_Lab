@@ -10,6 +10,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <script src="/wow.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="/script.js"></script>
     </head>
     <body>
         <!-- ----------------NAV BAR---------------------- -->
@@ -207,11 +212,11 @@
                     The best robot kits & STEM Toys are here. Pick for you.
                 </h4>
             </header>
-            <div class="owl-carousel ">
+            <div class="owl-carousel carousel1">
                 <!-- <div class="nextIcon">></div>
                     <div class="prevIcon"><</div> -->
-                <a href="">
-                    <div class="cards">
+                <div class="cards">
+                    <a href="">
                         <div class="image-container">
                             <img src="/images/products/Landing page/Rectangle 10.png" alt="">
                         </div>
@@ -220,10 +225,10 @@
                                 mBot Ultimate 10-in-1Robotics Kit
                             </p>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="cards">
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="">
                         <div class="image-container">
                             <img src="/images/products/Landing page/Rectangle 12.png" alt="">
                         </div>
@@ -232,10 +237,10 @@
                                 mBot2 Buildable Coding Robot
                             </p>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="cards">
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="">
                         <div class="image-container">
                             <img src="/images/products/Landing page/Rectangle 13.png" alt="">
                         </div>
@@ -244,8 +249,8 @@
                                 mTiny Smart Robotfor Preschoolers
                             </p>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
             <div class="view-all">
                 <button class="button">VIEW ALL</button>
@@ -302,7 +307,7 @@
                     <br>
                     And Get A Free Demo Class
                 </p>
-                <div class="enroll-btn wow fadeInUp">
+                <div class="wow fadeInUp">
                     <button class="button">ENROLL NOW</button>
                 </div>
             </div>
@@ -347,61 +352,173 @@
         </section>
         <!-- ---------------HOW IT WORKS----------------- -->
         <!-- ---------------testimonials----------------- -->
-        <section class="testimonials"></section>
+        <section id="testimonials" class="pt-5">
+            <div class="container">
+                <div class="d-inline-flex " id="title">
+                    <div class="quote-icon">
+                        <div class="circle">
+                            <div class="quote">
+                                <img src="images/testimonials/quote-icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="text-center">
+                        <b>What Parents Say..</b>
+                    </h1>
+                </div>
+                <div class="slider">
+                    <div class="owl-carousel carousel2">
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <div class="image-container">
+                                    <img class="image" src="images/testimonials/manisha.jpg" alt="">
+                                    <div class="quote-icon">
+                                        <div class="circle">
+                                            <div class="quote">
+                                                <img src="images/testimonials/quote-icon.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="text-left ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                                <p class="mb-0 text-left">
+                                    <b>Miss Manisha Kohli</b>
+                                </p>
+                                <p class="mb-0 text-left">
+                                    Manab's Mother
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <div class="image-container">
+                                    <img class="image" src="images/testimonials/rajesh.jpg" alt="">
+                                    <div class="quote-icon">
+                                        <div class="circle">
+                                            <div class="quote">
+                                                <img src="images/testimonials/quote-icon.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                                <p class="mb-0 text-left">
+                                    <b>Mr. Sandeep Yadav</b>
+                                </p>
+                                <p class="mb-0 text-left">
+                                    Arnab's Father
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <div class="image-container">
+                                    <img class="image" src="images/testimonials/salman.jpg" alt="">
+                                    <div class="quote-icon">
+                                        <div class="circle">
+                                            <div class="quote">
+                                                <img src="images/testimonials/quote-icon.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="text-left ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                                <p class="mb-0 text-left">
+                                    <b>Mr. Saroj Pasi</b>
+                                </p>
+                                <p class="mb-0 text-left">
+                                    Elena's Father
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <div class="image-container">
+                                    <img class="image" src="images/testimonials/manisha.jpg" alt="">
+                                    <div class="quote-icon">
+                                        <div class="circle">
+                                            <div class="quote">
+                                                <img src="images/testimonials/quote-icon.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="text-left ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                                <p class="mb-0 text-left">
+                                    <b>Miss Anu Karki</b>
+                                </p>
+                                <p class="mb-0 text-left">
+                                    Santi's Mother
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <div class="image-container">
+                                    <img class="image" src="images/testimonials/rajesh.jpg" alt="">
+                                    <div class="quote-icon">
+                                        <div class="circle">
+                                            <div class="quote">
+                                                <img src="images/testimonials/quote-icon.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="text-left ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                                <p class="mb-0 text-left">
+                                    <b>Mr. Ramesh Thapa</b>
+                                </p>
+                                <p class="mb-0 text-left">
+                                    Arjun's Mother
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-all">
+                        <button class="button">VIEW ALL</button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- ---------------testimonials----------------- -->
+        <!-- ---------------PARTNER/ENROL ----------------- -->
+        <section class="partner-enroll">
+            <div class="left-container">
+                <h3 class="wow fadeInDown">
+                    Become Our Partner School
+                </h3>
+                <p>
+                    Empower teachers with hands-on tools to help students become
+                    <br>
+                    creators & inventors in the classroom
+                </p>
+                <div class="wow fadeInUp">
+                    <button class="button">ENROLL NOW</button>
+                </div>
+            </div>
+            <div class="right-container wow zoomInDown">
+                <img src="/images/school-teaching.png" alt="">
+            </div>
+            <div class="enroll-icons">
+                <div class="wow fadeInLeft">
+                    <img src="/images/enroll now cta icons/Group.svg" alt="">
+                </div>
+                <!-- <div class="wow fadeInRight">
+                    <img src="/images/enroll now cta icons/Group-1.svg" alt="">
+                </div> -->
+            </div>
+        </section>
+        <!-- ---------------PARTNER/ENROL----------------- -->
         <!-- --------------JAVASCRIPT---------------- -->
-        <script>
-            // Open the full screen search box
-            function openSearch() {
-            document.getElementById("myOverlay").style.display = "block";
-            }
-
-            // Close the full screen search box
-            function closeSearch() {
-            document.getElementById("myOverlay").style.display = "none";
-            }
-        </script>
-        <script src="/wow.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script>
-              new WOW().init();
-        </script>
-        <script>
-                    
-            const nextIcon = '<img src="/images/corousel slider icons/Landing page/Vector-1.svg">';
-            const prevIcon = '<img src="/images/corousel slider icons/Landing page/Vector.svg"r>';
-
-            $(document).ready(function() {
-            var owl = $(".owl-carousel");
-            owl.owlCarousel({
-                loop:true,
-                margin:100,
-                center: true,
-                nav: true,
-                navText: [
-                prevIcon,
-                nextIcon
-                ],
-                autoplay:true,
-                autoplayTimeout:2000,
-                smartSpeed:1200,
-                stagePadding:50,
-                responsive: {
-                0: {
-                    cards: 1
-                },
-                800: {
-                    cards: 2
-                },
-                1400: {
-                    cards: 2
-                }
-                }
-            });
-            
-            });
-        </script>
     </body>
 </html>

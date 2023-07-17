@@ -243,6 +243,7 @@ video {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  filter: brightness(80%);
 }
 
 .caption {
@@ -268,11 +269,11 @@ video {
 .caption h3 {
   font-size: 21px;
   font-weight: 700;
-  margin-bottom: 20px;
+  /* margin-bottom: 0px; */
 }
 
 .caption .text {
-  margin: 20px;
+  margin: 20px 20px 0;
 }
 
 .small-text {
@@ -536,8 +537,14 @@ header h4 {
   align-items: center;
   padding: 100px 100px 34px 100px;
   color: #03a4ee;
-  /* gap: 150px; */
-  /* background-color: blue; */
+}
+
+.owl-carousel .carousel1 .owl-stage {
+  transition: all 0s ease 0s;
+  width: 3398px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transform: translate3d(-731px, -5px, 0px);
 }
 
 .owl-nav {
@@ -713,7 +720,7 @@ header h4 {
   justify-content: center;
 }
 
-.enroll-btn button {
+.enroll-now .button {
   background: #03a4ee;
   color: #f4faff;
   box-shadow: 0 0;
@@ -751,7 +758,7 @@ header h4 {
   text-align: left;
 }
 
-.left-container p {
+.how-it-works .left-container p {
   padding-top: 40px;
   /* padding-bottom: 30px; */
   line-height: 200%;
@@ -762,20 +769,9 @@ header h4 {
   height: 464px;
   background: white;
   margin: 100px 0;
-  animation: ltr 5s infinite alternate;
 }
 
-@keyframes ltr {
-  0% {
-    object-position: 0% 0%;
-  }
-  50% {
-    object-position: right;
-  }
-  100% {
-    object-position: center;
-  }
-}
+
 
 .how-it-works .infographic {
   width: 100%;
@@ -800,13 +796,216 @@ header h4 {
 /* ----------how it works---------- */
 
 /* ----------testimonials---------- */
-.testimonials{
-  padding: 100px 110px;
-  background-image: url("/images/testimonials/Rectangle\ 40.png");
-  height: 900px; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover; 
+
+#testimonials {
+  background-image: url("/images/testimonials/Rectangle40.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider {
+  padding-bottom: 100px;
+  position: relative;
+}
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+  color: #012f3c;
+}
+.slider-card {
+  background: #f4faff;
+  padding: 0px;
+  margin: 50px 25px;
+  border-radius: 10px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.9);
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+#testimonials .image-container {
+  height: 250px;
+  width: 400px;
+  position: relative;
+}
+#testimonials .image-container .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 52px 0 0 0;
+}
+
+#title .circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+  background-color: #012f3c;
+  position: relative;
+}
+
+#title .quote {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 28%;
+  right: 28%;
+}
+
+.slider-card .quote-icon {
+  position: absolute;
+  top: 84%;
+  left: 5%;
+}
+.slider-card .circle {
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  background-color: #012f3c;
+  position: relative;
+}
+
+.quote {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 23%;
+  right: 22%;
+}
+
+.quote img {
+  height: 100%;
+  width: 100%;
+}
+
+.slider-card img {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.text {
+  padding: 20px;
+  line-height: 130%;
+}
+
+#testimonials p {
+  font-size: 16px;
+}
+
+#testimonials h1 {
+  font-size: 37px;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  color: #f4faff;
+}
+
+#testimonials .carousel2 {
+  padding: 0px 100px 34px 100px;
+}
+
+#testimonials .owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 100px);
+  left: 0px;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+#testimonials .owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 100px);
+  right: 0px;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+#testimonials .view-all {
+  margin-top: -50px;
 }
 
 /* ----------testimonials---------- */
+
+/* ----------PARTNER/ENROL---------- */
+.partner-enroll h3{
+  font-weight: 600;
+}
+
+.partner-enroll p{
+  /* font-weight: 500; */
+  font-size: 16px;
+  /* text-align: center; */
+  color: #012f3c;
+}
+
+.partner-enroll {
+  /* padding: 100px 110px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background:#f4faff;
+}
+
+.partner-enroll .right-container {
+  width: 586px;
+  height: 416px;
+  background: white;
+  /* margin: 100px 0; */
+  animation: ltr 5s infinite alternate;
+  
+}
+
+ 
+
+.partner-enroll .right-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ animation: updown 5s infinite alternate;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.partner-enroll p {
+  /* font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: #012f3c; */
+}
+
+.partner-enroll .left-container {
+  /* text-align: left; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding-left: 250px;
+}
+
+.partner-enroll .button {
+  background: #03a4ee;
+  color: #f4faff;
+  box-shadow: 0 0;
+}
+
+.partner-enroll .enroll-icons {
+  bottom: 25%;
+}
+
+ /* ----------PARTNER/ENROL---------- */
