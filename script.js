@@ -10,11 +10,11 @@ function closeSearch() {
 
 new WOW().init();
 
-// Owlcarousel one
+// -----------------------Owlcarousel one--------------------
 const nextIcon =
-  '<img src="/images/corousel slider icons/Landing page/Vector-1.svg">';
+  '<img src="/images/right-arrow.svg">';
 const prevIcon =
-  '<img src="/images/corousel slider icons/Landing page/Vector.svg"r>';
+  '<img src="/images/left-arrow.svg">';
 
 $(document).ready(function () {
   var owl = $(".carousel1");
@@ -23,7 +23,7 @@ $(document).ready(function () {
     margin: 100,
     nav: true,
     navText: [prevIcon, nextIcon],
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 2000,
     smartSpeed: 1200,
     stagePadding: 50,
@@ -41,7 +41,7 @@ $(document).ready(function () {
   });
 });
 
-// Owlcarousel two
+//-------------------- Owlcarousel two----------------------
 const nxtIcon = '<img src="/images/testimonials/Vector-1.svg">';
 const prvIcon = '<img src="/images/testimonials/Vector.svg"r>';
 $(document).ready(function () {
@@ -66,4 +66,45 @@ $(document).ready(function () {
       },
     },
   });
-});
+} );
+
+// ---------------------scroll progress-----------------
+
+let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#012f3c ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
+// -----------------------title text coloring----------------
+
+  const titles = document.querySelectorAll('.title h1, .title h3');
+
+  titles.forEach((title) => {
+    const text = title.textContent;
+    let coloredText = '';
+    
+
+    for (let i = 0; i < text.length; i++) {
+      coloredText += i % 2 === 0 ? text[i] : `<span class="blue-letter">${text[i]}</span>`;
+    }
+
+    title.innerHTML = coloredText;
+  });
+

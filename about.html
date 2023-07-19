@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="/about.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- ----------------NAV BAR---------------------- -->
+        <section class="nav-bar">
+            <nav>
+                <div class="wow fadeInLeft">
+                    <img src="/images/logo.png" class="logo">
+                </div>
+                <div class="hz-menu wow zoomInDown">
+                    <ul>
+                        <li>
+                            <a href="/index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#products">PRODUCT</a>
+                        </li>
+                        <li>
+                            <a href="#courses">COURSES</a>
+                        </li>
+                        <!-- ---------------NAV BAR DROPDOWN----------------- -->
+                        <li class="dropdown">
+                            <div class="dropbtn">
+                                <a href="#about">ABOUT US</a>
+                                <div class="dropdown__arrow">
+                                    <img src="/images/dropdown_arrow.svg" alt="">
+                                </div>
+                            </div>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#">COMPANY</a>
+                                </li>
+                                <li>
+                                    <a href="#blogs">BLOGS</a>
+                                </li>
+                                <li>
+                                    <a href="#">PROJECT GALLERY</a>
+                                </li>
+                                <li>
+                                    <a href="#testimonials">TESTIMONIALS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <div class="dropbtn">
+                                <a href="">SUPPORT</a>
+                                <div class="dropdown__arrow">
+                                    <img src="/images/dropdown_arrow.svg" alt="">
+                                </div>
+                            </div>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#">PARTNERSHIP</a>
+                                </li>
+                                <li>
+                                    <a href="#">CONTACT</a>
+                                </li>
+                                <li>
+                                    <a href="#">CURRICULUM</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ---------------NAV BAR DROPDOWN----------------- -->
+                <div class="icons wow fadeInRight">
+                    <div id="myOverlay" class="overlay">
+                        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                        <div class="overlay-content">
+                            <form action="">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="openBtn" onclick="openSearch()">
+                        <i class="fa-solid fa-magnifying-glass fa-spin"></i>
+                    </div>
+                    <a href="">
+                        <i class="fa-brands fa-shopify fa-bounce"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-user-plus fa-beat"></i>
+                    </a>
+                </div>
+            </nav>
+        </section>
+        <!-- ----------------NAV BAR---------------------- -->
+        <!-- ----------------hero-section---------------------- -->
+        <section id="hero-section">
+            <img class="main-image" src="/images/about.jpg" alt="">
+            <div class="caption">
+                <div class="title">
+                    <h1 class=" wow fadeInLeft">About Us</h1>
+                    <div class="title-icon">
+                        <div class="line"></div>
+                        <div class="icon">
+                            <img src="/images/title-icon.svg" alt="">
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <!-- <div class="wow zoomInDown">
+                    <button class="cta">
+                        <span>ENROLL NOW</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </div> -->
+            </div>
+        </section>
+        <!-- ----------------hero-section---------------------- -->
+        <!-- ---------------our story----------------- -->
+        <section id="our-story">
+            <div class="left-container">
+                <header>
+                    <h2 class="wow fadeInLeft">
+                        <b>OUR STORY..</b>
+                    </h2>
+                    <h4 class="wow fadeInRight">
+                        Our INSPIRAITON and MOTIVATION
+                    </h4>
+                </header>
+                <p class="wow fadeInDown">
+                    <b>NaN Robotics Computing</b>
+                    was incorporated with the ideology of teaching the young generation about STEM – Robotics, through something they will love, create and play. We want the children to know that their ideas and creations can be limitless. We want them to explore with what they have in mind and what they can create with their hands.
+                    <br>
+                    <br>
+                    <b>Robotics</b>
+                    is a growing industry, and will become a fundamental part of our lives in the future. At NaN Robotics, we aim to use various Lego educational sets to provide children with the opportunity to learn the fundamentals of robotics. We are one of the few companies in Nepal offering such services, and it is our goal to provide the best opportunities for the children.
+                    <br>
+                    <br>
+                    <b>Our Programs</b>
+                    are backed by World’s leader in Robotics Education, Researchers and Innovators, so children can benefit from them not just at special classes, but also in their schools and homes itself. The education system in Nepal is still traditional in many institutions, we hope our services will help to modernize the system. In the age of machine learning and AI, our children must familiarize themselves with the available technology.
+                </p>
+            </div>
+            <div class="right-container">
+                <div class="director-image">
+                    <iframe width="490" height="335"  src="https://www.youtube.com/embed/Amfrm2V_KO0?controls=0"></iframe>
+                </div>
+                <div class="director-text">
+                    <h3>Mr. Director of NaN Robotics</h3>
+                    <p>Director</p>
+                    <p>
+                        <i>
+                            <span class="red">“Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+                        </i>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- ---------------our story----------------- -->
+    </body>
+</html>

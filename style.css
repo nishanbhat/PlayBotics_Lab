@@ -3,16 +3,15 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  /* text-align: justify; */
+  scroll-behavior: smooth;
+  color:#012f3c
 }
-
-/* body{
-  padding: 0 110px;
-} */
 
 /* ------NAV BAR--------- */
 
 nav {
+  position: fixed;
+  z-index: 999;
   top: 0;
   width: 100%;
   background-color: #f4faff;
@@ -102,7 +101,7 @@ nav {
 .overlay button {
   float: left;
   width: 20%;
-  padding: 15px;
+  padding: 17px;
   background: #012f3c;
   font-size: 16px;
   border: none;
@@ -235,7 +234,7 @@ nav {
   padding: 10px;
 } */
 
-/* ---------------------VIDEO BANNER------------------ */
+/* ---------------------VIDEO hero-section------------------ */
 
 video {
   top: 0;
@@ -289,7 +288,7 @@ video {
   margin: 0 40px;
 }
 
-/* ----------ENROLL NOW BUTTON / BANNER---------- */
+/* ----------ENROLL NOW BUTTON / hero-section---------- */
 
 .cta {
   position: relative;
@@ -349,7 +348,7 @@ video {
   transform: scale(0.95);
 }
 
-/* ----------ENROLL NOW BUTTON / BANNER---------- */
+/* ----------ENROLL NOW BUTTON / hero-section---------- */
 
 /* ----------COURSES SECTION---------- */
 
@@ -513,12 +512,6 @@ h2 {
   right: 0;
 }
 
-/* .bottom-right {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-} */
-
 header h2 {
   font-size: 37px;
   text-align: center;
@@ -581,6 +574,10 @@ header h4 {
   transition: all 0.5s ease;
 }
 
+#products .owl-carousel .owl-stage {
+  transform: translate3d(-1099px, -5px, 0px) !important;
+}
+
 .view-all {
   display: flex;
   justify-content: center;
@@ -596,10 +593,17 @@ header h4 {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
 }
 
-.image-container {
+#products .image-container {
   background: white;
   height: 264px;
+  width: 264px;
   border-radius: 10px;
+}
+
+.cards img {
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
 }
 
 .product-title {
@@ -715,6 +719,8 @@ header h4 {
   background: #03a4ee;
   color: #f4faff;
   box-shadow: 0 0;
+  position: relative;
+  z-index: 997;
 }
 
 .enroll-icons {
@@ -726,6 +732,15 @@ header h4 {
   bottom: 10px;
 }
 
+/* .left {
+  position: absolute;
+  left: 0;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+} */
 /* ----------ENROL NOW---------- */
 
 /* ----------how it works---------- */
@@ -787,7 +802,7 @@ header h4 {
 /* ----------testimonials---------- */
 
 #testimonials {
-  background-image: url("/images/testimonials/Rectangle40.png");
+  background-image: url("/images/testimonials-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -917,6 +932,8 @@ header h4 {
 
 #testimonials .view-all {
   margin-top: -50px;
+  position: relative;
+  z-index: 997;
 }
 
 /* ----------testimonials---------- */
@@ -947,7 +964,6 @@ header h4 {
   height: 650px;
   background: white;
   /* margin: 100px 0; */
-  
 }
 
 .partner-enroll .right-container img {
@@ -955,7 +971,6 @@ header h4 {
   height: 100%;
   object-fit: cover;
 }
-
 
 .partner-enroll .left-container {
   /* text-align: left; */
@@ -989,7 +1004,7 @@ header h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 0px 34px 0px;
+  padding: 70px 0px 34px 0px;
   color: #03a4ee;
 }
 
@@ -1003,11 +1018,11 @@ header h4 {
 .image-container {
   width: 350px;
   height: 250px;
-  border-radius: 10px;
 }
 .image-container img {
   height: 100%;
   width: 100%;
+  border-radius: 10px;
 }
 
 .blog-title {
@@ -1129,6 +1144,10 @@ div.social {
   margin: 0;
 }
 
+.highlight {
+  color: #3a62b2;
+}
+
 .location,
 .phone,
 .mail {
@@ -1145,12 +1164,35 @@ div.social {
   width: 120px !important;
   padding-right: 0 !important;
   filter: brightness(80%);
-
 }
 
 .robot img {
   width: 100%;
   height: 100%;
+}
+
+#progress {
+  position: fixed;
+  bottom: 2px;
+  right: 0px;
+  height: 50px;
+  width: 50px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #f4faff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #012f3c;
 }
 
 @media screen and (max-width: 850px) {
