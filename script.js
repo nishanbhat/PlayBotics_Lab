@@ -41,7 +41,7 @@ $(document).ready(function () {
   });
 });
 
-//-------------------- Owlcarousel two----------------------
+// -------------------- Owlcarousel two----------------------
 const nxtIcon = '<img src="/images/testimonials/Vector-1.svg">';
 const prvIcon = '<img src="/images/testimonials/Vector.svg"r>';
 $(document).ready(function () {
@@ -94,17 +94,28 @@ window.onload = calcScrollValue;
 
 // -----------------------title text coloring----------------
 
-  const titles = document.querySelectorAll('.title h1, .title h3');
+  // const titles = document.querySelectorAll('.title h1, .title h3');
 
-  titles.forEach((title) => {
-    const text = title.textContent;
-    let coloredText = '';
+  // titles.forEach((title) => {
+  //   const text = title.textContent;
+  //   let coloredText = '';
     
 
-    for (let i = 0; i < text.length; i++) {
-      coloredText += i % 2 === 0 ? text[i] : `<span class="blue-letter">${text[i]}</span>`;
-    }
+  //   for (let i = 0; i < text.length; i++) {
+  //     coloredText += i % 2 === 0 ? text[i] : `<span class="blue-letter">${text[i]}</span>`;
+  //   }
 
-    title.innerHTML = coloredText;
-  });
+  //   title.innerHTML = coloredText;
+  // });
 
+
+  // -----------------bar/menu---------------------
+
+function myFunction() {
+  var x = document.getElementById("menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

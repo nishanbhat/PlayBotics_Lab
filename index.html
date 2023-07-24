@@ -20,10 +20,10 @@
         <!-- ----------------NAV BAR---------------------- -->
         <section class="nav-bar">
             <nav>
-                <div class="wow fadeInLeft">
+                <div class="wow bounceInDown">
                     <img src="/images/logo.png" class="logo">
                 </div>
-                <div class="hz-menu wow zoomInDown">
+                <div class="hz-menu wow zoomInDown" id="menu">
                     <ul>
                         <li>
                             <a href="/index.html">HOME</a>
@@ -79,7 +79,7 @@
                     </ul>
                 </div>
                 <!-- ---------------NAV BAR DROPDOWN----------------- -->
-                <div class="icons wow fadeInRight">
+                <div class="icons wow zoomInDown">
                     <div id="myOverlay" class="overlay">
                         <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
                         <div class="overlay-content">
@@ -100,6 +100,9 @@
                     <a href="">
                         <i class="fa-solid fa-user-plus fa-beat"></i>
                     </a>
+                    <a href="javascript:void(0);" class="bar-icon" onclick="myFunction()">
+                        <i class="fa-solid fa-bars fa-shake"></i>
+                    </a>
                 </div>
             </nav>
         </section>
@@ -111,10 +114,10 @@
             </video>
             <div class="caption">
                 <div class="text">
-                    <h1 class="wow fadeInLeft">SHAPING YOUNG MINDS</h1>
+                    <h1 class="wow bounceInDown">SHAPING YOUNG MINDS</h1>
                     <div class="small-text">
                         <div class="line"></div>
-                        <h3 class="wow fadeInRight">The Future Belongs To Those Who See Possibilities Today</h3>
+                        <h3 class="wow zoomInDown">The Future Belongs To Those Who See Possibilities Today</h3>
                         <div class="line"></div>
                     </div>
                 </div>
@@ -139,7 +142,7 @@
                 </h2>
             </header>
             <div class="courses">
-                <div class="course-item wow fadeInLeft">
+                <div class="course-item wow bounceInDown">
                     <a href="">
                         <img src="/images/makeblock.png" alt="">
                         Makeblock
@@ -157,7 +160,7 @@
                         Scratch by MIT
                     </a>
                 </div>
-                <div class="course-item wow fadeInRight">
+                <div class="course-item wow zoomInDown">
                     <a href="">
                         <img src="/images/arduino.png" alt="">
                         Arduino
@@ -171,29 +174,29 @@
         <section class="who-we-are">
             <div class="left-container">
                 <header>
-                    <h2 class="wow fadeInLeft">
+                    <h2 class="wow bounceInDown">
                         <b>Who We Are</b>
                     </h2>
-                    <h4 class="wow fadeInRight">
+                    <h4 class="wow zoomInDown">
                         Our Story
                     </h4>
                 </header>
                 <p class="wow fadeInDown">
                     NaN Robotics Computing was incorporated with the ideology
-                    <br>
+                
                     of teaching the young generation about STEM – Robotics, through
-                    <br>
+                
                     something they will love, create and play. We want the children
-                    <br>
+                
                     to know that their ideas and creations can be limitless. We want
-                    <br>
+                
                     them to explore with what they have in mind and what they can
-                    <br>
+                
                     create with their hands.
                 </p>
                 <div class="btn-icon">
                     <button class="button">READ MORE</button>
-                    <div class="wow zoomInDown">
+                    <div class="hands-down-icon wow zoomInDown">
                         <img src="/images/hands-down-icon.svg" alt="">
                     </div>
                 </div>
@@ -208,7 +211,7 @@
             <img src="/images/block1.svg" class="top-right">
             <header>
                 <h2 class="wow zoomInDown ">Our Featured Products</h2>
-                <h4 class="wow fadeInRight">
+                <h4 class="wow zoomInDown">
                     The best robot kits & STEM Toys are here. Pick for you.
                 </h4>
             </header>
@@ -260,46 +263,49 @@
         <!-- ---------------PRODUCTS----------------- -->
         <!-- ---------------WHY NAN ROBOTICS----------------- -->
         <section class="why-nan-robotics">
-            <div>
-                <div class="left-container">
-                    <img src="/images/why-nan.jpg" alt="">
-                </div>
-                <div class="right-container">
-                    <header>
-                        <h2 class="wow fadeInLeft">
-                            <b>Why NaN Robotics</b>
-                        </h2>
-                        <h4 class="wow fadeInRight">
-                            Building a Passion for Robotics Learning
-                        </h4>
-                    </header>
-                    <p class="wow fadeInDown">
-                        We inspire kids ages 6 to 16 to build on their innate desire for
-                        <br>
+            <!-- <div> -->
+            <div class="left-container">
+                <img src="/images/why-nan.jpg" alt="">
+            </div>
+            <div class="right-container">
+                <header>
+                    <h2 class="wow bounceInDown">
+                        <b>Why NaN Robotics</b>
+                    </h2>
+                    <h4 class="wow zoomInDown">
+                        Building a Passion for Robotics Learning
+                    </h4>
+                </header>
+                <p class="wow fadeInDown">
+                    We inspire kids ages 6 to 16 to build on their innate desire for
+                        
                         answers by exploring engineering concepts in a fun, hands-on
-                        <br>
+                        
                         way. We offer after-school programs, evening classes, camps,
-                        <br>
+                        
                         birthday parties, and special events designed to present kids with
-                        <br>
+                        
                         challenging yet accessible Robotics and Engineering activities
-                        <br>
+                        
                         from which they can learn and grow.
-                    </p>
-                    <div class="btn-icon">
-                        <!-- <button class="button">READ MORE</button> -->
-                        <div class="wow zoomInDown">
-                            <img src="/images/hands-left-icon.svg" alt="">
-                        </div>
+                </p>
+                <div class="btn-icon">
+                    <!-- <button class="button">READ MORE</button> -->
+                    <div class="hands-left-icon wow zoomInDown">
+                        <img src="/images/hands-left-icon.svg" alt="">
                     </div>
                 </div>
             </div>
+            <!-- </div> -->
         </section>
         <!-- ---------------WHY NAN ROBOTICS----------------- -->
         <!-- ---------------ENROL NOW----------------- -->
         <section class="enroll-now">
             <div class="left-container wow zoomInDown">
-                <img src="/images/logo.png" alt="">
+                <div class="left wow bounceInDown">
+                    <img src="/images/hands-right-icon.svg" alt="">
+                </div>
+                <img class="enroll-logo" src="/images/logo.png" alt="">
             </div>
             <div class="right-container">
                 <p class="wow fadeInDown">
@@ -310,39 +316,35 @@
                 <div class="wow fadeInUp">
                     <button class="button">ENROLL NOW</button>
                 </div>
-            </div>
-            <div class="enroll-icons">
-                <div class="left wow fadeInLeft">
-                    <img src="/images/hands-right-icon.svg" alt="">
-                </div>
-                <div class=" right wow fadeInRight">
+                <div class=" right wow zoomInDown">
                     <img src="/images/hands-left-icon.svg" alt="">
                 </div>
             </div>
+            <div class="enroll-icons"></div>
         </section>
         <!-- ---------------ENROL NOW----------------- -->
         <!-- ---------------HOW IT WORKS----------------- -->
         <section class="how-it-works">
             <div class="left-container">
                 <header>
-                    <h2 class="wow fadeInLeft">
+                    <h2 class="wow bounceInDown">
                         <b>How It Works</b>
                     </h2>
-                    <h4 class="wow fadeInRight">
+                    <h4 class="wow zoomInDown">
                         Focus on being productive, instead of busy
                     </h4>
                 </header>
                 <p class="wow fadeInDown">
                     We inspire kids ages 6 to 16 to build on their innate desire for
-                    <br>
+                    
                     answers by exploring engineering concepts in a fun, hands-on way
-                    <br>
+                    
                     We offer after-school programs, evening classes, camps, birthday
-                    <br>
+                    
                     parties, and special events designed to present kids with challenging
-                    <br>
+                    
                     yet accessible Robotics and Engineering activities from which they
-                    <br>
+                    
                     can learn and grow.
                 </p>
             </div>
@@ -523,7 +525,7 @@
                 <h2 class="wow zoomInDown ">From The Blog</h2>
             </header>
             <div class="blog-container ">
-                <div class="cards wow fadeInLeft">
+                <div class="cards wow bounceInDown">
                     <div class="image-container">
                         <a href="">
                             <img src="/images/blog-1.jpg" alt="">
@@ -567,7 +569,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="cards wow fadeInRight">
+                <div class="cards wow zoomInDown">
                     <div class="image-container">
                         <a href="">
                             <img src="/images/blog-3.jpg" alt="">
@@ -600,7 +602,7 @@
         <section id="footer">
             <footer>
                 <div class="row primary">
-                    <div class="column about wow fadeInLeft">
+                    <div class="column about wow bounceInDown">
                         <div class="">
                             <img src="/images/logo.png" class="logo">
                         </div>
@@ -677,7 +679,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="column support wow fadeInRight">
+                    <div class="column support wow zoomInDown">
                         <h3>Support</h3>
                         <ul>
                             <li>
@@ -699,12 +701,14 @@
                     </div>
                 </div>
                 <div class="copyright ">
-                    <div class="p1 wow fadeInRight">
+                    <div class="p1 wow zoomInDown">
                         <p>© Copyright 2023 | All Rights Reserved</p>
                     </div>
-                    <div class="p2 wow fadeInLeft">
-                        <p>Powered by
-                            <span class="highlight">thamel</span>.com
+                    <div class="p2 wow bounceInDown">
+                        <p>
+                            Powered by
+                            <span class="highlight">thamel</span>
+                            .com
                         </p>
                     </div>
                 </div>
