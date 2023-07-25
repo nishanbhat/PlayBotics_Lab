@@ -10,42 +10,12 @@ function closeSearch() {
 
 new WOW().init();
 
-// -----------------------Owlcarousel one--------------------
-const nextIcon =
-  '<img src="/images/right-arrow.svg">';
-const prevIcon =
-  '<img src="/images/left-arrow.svg">';
 
-$(document).ready(function () {
-  var owl = $(".carousel1");
-  owl.owlCarousel({
-    loop: true,
-    margin: 100,
-    nav: true,
-    navText: [prevIcon, nextIcon],
-    autoplay: false,
-    autoplayTimeout: 2000,
-    smartSpeed: 1200,
-    stagePadding: 50,
-    responsive: {
-      0: {
-        cards: 1,
-      },
-      800: {
-        cards: 2,
-      },
-      1400: {
-        cards: 2,
-      },
-    },
-  });
-});
-
-// -------------------- Owlcarousel two----------------------
+// -------------------- Owlcarousel ----------------------
 const nxtIcon = '<img src="/images/testimonials/Vector-1.svg">';
 const prvIcon = '<img src="/images/testimonials/Vector.svg"r>';
 $(document).ready(function () {
-  $(".carousel2").owlCarousel({
+  $(".owl-carousel ").owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
