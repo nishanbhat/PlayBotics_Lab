@@ -10,33 +10,33 @@ function closeSearch() {
 
 new WOW().init();
 
-
-// -------------------- Owlcarousel ----------------------
-const nxtIcon = '<img src="/images/testimonials/Vector-1.svg">';
-const prvIcon = '<img src="/images/testimonials/Vector.svg"r>';
-$(document).ready(function () {
-  $(".owl-carousel ").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
+// Owlcarousel
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+  	loop:true,
+    margin:10,
+    nav:true,
+	autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
     center: true,
-    navText: [prvIcon, nxtIcon],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      1000: {
-        items: 3,
-      },
-    },
+    navText: [
+	    "<i class='fa fa-angle-left'></i>",
+	    "<i class='fa fa-angle-right'></i>"
+	],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
   });
-} );
+});
 
 // ---------------------scroll progress-----------------
 
@@ -64,22 +64,20 @@ window.onload = calcScrollValue;
 
 // -----------------------title text coloring----------------
 
-  // const titles = document.querySelectorAll('.title h1, .title h3');
+// const titles = document.querySelectorAll('.title h1, .title h3');
 
-  // titles.forEach((title) => {
-  //   const text = title.textContent;
-  //   let coloredText = '';
-    
+// titles.forEach((title) => {
+//   const text = title.textContent;
+//   let coloredText = '';
 
-  //   for (let i = 0; i < text.length; i++) {
-  //     coloredText += i % 2 === 0 ? text[i] : `<span class="blue-letter">${text[i]}</span>`;
-  //   }
+//   for (let i = 0; i < text.length; i++) {
+//     coloredText += i % 2 === 0 ? text[i] : `<span class="blue-letter">${text[i]}</span>`;
+//   }
 
-  //   title.innerHTML = coloredText;
-  // });
+//   title.innerHTML = coloredText;
+// });
 
-
-  // -----------------bar/menu---------------------
+// -----------------bar/menu---------------------
 
 function myFunction() {
   var x = document.getElementById("menu");
