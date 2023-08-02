@@ -1,240 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  color: #012f3c;
 }
-
-/* ------------------------NAV BAR-------------------- */
-
-nav {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  width: 100%;
-  background-color: #f4faff;
-  padding: 28px 110px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
-}
-
-/* a:active {
-  color: #03a4ee;} */
-
-.logo {
-  width: 204px;
-  height: 44.2px;
-}
-
-.icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 38px;
-}
-
-.icons i {
-  font-size: 24px;
-  color: #012f3c;
-}
-
-/* -------------SEARCH IN NAV BAR------------------ */
-
-.openBtn {
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.overlay-content {
-  position: relative;
-  top: 46%;
-  width: 80%;
-  text-align: center;
-  margin-top: 30px;
-  margin: auto;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  cursor: pointer;
-  color: #f4faff;
-}
-
-.overlay .closebtn:hover {
-  color: #ccc;
-}
-
-.overlay input[type="text"] {
-  padding: 15px;
-  font-size: 20.5px;
-  border: none;
-  float: left;
-  width: 80%;
-  background: #f4faff;
-}
-
-.overlay input[type="text"]:hover {
-  background: #f1f1f1;
-}
-
-.overlay button {
-  float: left;
-  width: 20%;
-  padding: 17px;
-  background: #012f3c;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  color: #03a4ee;
-}
-
-.overlay button:hover {
-  background: #03a4ee;
-}
-
-.overlay i {
-  color: #f4faff;
-}
-
-/* ------------------Menu----------------- */
-
-.hz-menu ul {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 38px;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.hz-menu ul li a {
-  position: relative;
-  font-weight: 600;
-  cursor: pointer;
-  /* padding: 12px 16px; */
-  /* border-radius: 10px; */
-  color: #012f3c;
-  text-decoration: none;
-}
-
-.hz-menu ul li a:hover {
-  color: #03a4ee;
-}
-
-.hz-menu ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  transition: 0.3s;
-  border-radius: 10px;
-  /* background-color: #f2f2fc; */
-  z-index: -1;
-  transform: scale(0.5, 0.5);
-  opacity: 0;
-}
-
-.hz-menu ul li a:hover::after {
-  transform: scale(1, 1);
-  opacity: 1;
-}
-
-@media only screen and (max-width: 830px) {
-  .hz-menu ul {
-    flex-direction: column;
-    gap: 35px;
-  }
-}
-
-/* -----------NAV BAR DROPDOWN------------- */
-
-.dropdown {
-  display: flex;
-  position: relative;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.dropdown__arrow img {
-  margin-left: 5px;
-  margin-bottom: 3px;
-}
-
-.dropbtn {
-  display: flex;
-  /* background-color: #04aa6d; */
-  color: #012f3c;
-  /* padding: 12px 16px; */
-  font-size: 16px;
-  border: none;
-  font-weight: 600px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none !important;
-  position: absolute;
-  background-color: #f4faff;
-  /* min-width: 160px; */
-  /* min-width: 100%; */
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  margin: 0px 056px;
-}
-
-.dropdown-content a {
-  color: #012f3c;
-  padding: 3px 16px 7px 16px !important;
-  text-decoration: none;
-  display: block;
-  font-size: 12px;
-  font-weight: 600px;
-}
-
-.dropdown-content a:hover {
-  background-color: #f2f2fc;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block !important;
-}
-
-/* .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-  padding: 10px;
-} */
-
-/* ------------------------NAV BAR-------------------- */
 
 /* ---------------------hero-section------------------ */
 
@@ -309,7 +81,7 @@ nav {
 
 /* ---------- hero-section---------- */
 
-/* ----------how it works---------- */
+/* ----------our story---------- */
 
 #our-story h2 {
   font-size: 37px;
@@ -326,6 +98,7 @@ nav {
   gap: 92px;
   background: #f4faff;
   line-height: 200%;
+  position: relative;
 }
 
 #our-story .left-container {
@@ -346,7 +119,7 @@ nav {
   width: 713px;
   height: 694px;
   background: white;
-  margin:  200px 0 100px 0;
+  margin: 200px 0 100px 0;
 }
 
 #our-story .director-image {
@@ -367,9 +140,196 @@ nav {
   margin-bottom: 17px;
 }
 
-#our-story .red{
-    color: #D54242;
-    font-size: 21px;
+#our-story .red {
+  color: #d54242;
+  font-size: 21px;
 }
 
-/* ----------how it works---------- */
+/* ----------our story---------- */
+
+/* ----------our story---------- */
+
+#mission-vision {
+  background: #f4faff;
+  position: relative;
+}
+
+.hands-left-icon,
+.hands-right-icon {
+  /* height: 325px; */
+  width: 225px;
+  position: absolute;
+  left: 5%;
+}
+
+.hands-right-icon {
+  /* height: 325px; */
+  width: 225px;
+  position: absolute;
+  left: 5%;
+  bottom: 1%;
+}
+.hands-left-icon img,
+.hands-right-icon img,
+.one-hand-up-icon img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.one-hand-up-icon {
+  /* height: 325px; */
+  width: 225px;
+  position: absolute;
+  left: 79%;
+  top: 43%;
+}
+
+.top-left {
+  position: absolute;
+  top: -3%;
+  left: 0;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: -5%;
+  z-index: 1;
+  right: 0;
+}
+
+.up-container {
+  padding: 121px 217px 54px 521px;
+}
+.circle {
+  height: 700px;
+  width: 700px;
+  border-radius: 50%;
+  background: #012f3c;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  color: #f4faff;
+  width: 316px;
+  line-height: 200%;
+  padding: 10px;
+}
+
+.rectangle-dots {
+  position: absolute;
+  bottom: 10%;
+  right: 129%;
+}
+
+.text h4 {
+  margin: 10px 0;
+}
+
+.up-image {
+  width: 530px;
+  height: 425px;
+  background: #f4faff;
+  position: absolute;
+  right: 45%;
+  top: -10%;
+  padding: 20px;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.up-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.small-shape {
+  width: 205px;
+  height: 70px;
+  background: #03a4ee;
+  position: absolute;
+  right: 90%;
+  top: -2%;
+  border-radius: 0 40px 40px 0;
+  transform: rotate(104.33deg);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 75% 100%, 7% 100%);
+}
+
+.down-image {
+  width: 530px;
+  height: 425px;
+  background: #f4faff;
+  position: absolute;
+  right: 63.7%;
+  top: 50%;
+  padding: 20px;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.down-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+/* ----------.down-container---------- */
+.down-container {
+  padding: 121px 217px 54px 521px;
+}
+.down-container .rectangle-dots {
+  position: absolute;
+  top: 10%;
+  right: 122%;
+  transform: rotate(145deg);
+}
+
+.down-container .up-image {
+  width: 530px;
+  height: 425px;
+  background: #f4faff;
+  position: absolute;
+  right: 63%;
+  top: -15%;
+  padding: 20px;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+}
+
+.down-container .up-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+}
+
+.down-container .small-shape {
+  width: 205px;
+  height: 70px;
+  background: #03a4ee;
+  position: absolute;
+  right: 117%;
+  top: -7%;
+  border-radius: 0 40px 40px 0;
+  transform: rotate(75.67deg);
+  clip-path: polygon(7% 0%, 100% 0%, 100% 100%, 75% 100%, 0% 100%);
+}
+
+.down-container .down-image {
+  width: 530px;
+  height: 425px;
+  background: #f4faff;
+  position: absolute;
+  right: 44.2%;
+  top: 45%;
+  padding: 20px;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+}
+
+.down-container .down-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+}
+/* ----------our story---------- */
