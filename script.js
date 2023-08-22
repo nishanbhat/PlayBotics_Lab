@@ -87,3 +87,8 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+$(function () {
+  $("#nav-placeholder").load("navbar.html");
+} );
+

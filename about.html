@@ -8,6 +8,98 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
     <body>
+        <!-- ----------------NAV BAR---------------------- -->
+        <section class="nav-bar">
+            <nav>
+                <div class="wow bounceInDown">
+                    <a href="/index.html">
+                        <img src="/images/logo.png" class="logo">
+                    </a>
+                </div>
+                <div class="hz-menu " id="menu">
+                    <ul>
+                        <li>
+                            <a href="/index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#products">PRODUCT</a>
+                        </li>
+                        <li>
+                            <a href="#courses">COURSES</a>
+                        </li>
+                        <!-- ---------------NAV BAR DROPDOWN----------------- -->
+                        <li class="dropdown">
+                            <div class="dropbtn">
+                                <a href="#about">ABOUT US</a>
+                                <div class="dropdown__arrow">
+                                    <img src="/images/dropdown_arrow.svg" alt="">
+                                </div>
+                            </div>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#">COMPANY</a>
+                                </li>
+                                <li>
+                                    <a href="#blogs">BLOGS</a>
+                                </li>
+                                <li>
+                                    <a href="#">GALLERY</a>
+                                </li>
+                                <li>
+                                    <a href="#testimonials">TESTIMONIALS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <div class="dropbtn">
+                                <a href="">SUPPORT</a>
+                                <div class="dropdown__arrow">
+                                    <img src="/images/dropdown_arrow.svg" alt="">
+                                </div>
+                            </div>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#">PARTNERSHIP</a>
+                                </li>
+                                <li>
+                                    <a href="#">CONTACT</a>
+                                </li>
+                                <li>
+                                    <a href="#">CURRICULUM</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ---------------NAV BAR DROPDOWN----------------- -->
+                <div class="icons wow zoomInDown">
+                    <div id="myOverlay" class="overlay">
+                        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                        <div class="overlay-content">
+                            <form action="">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="openBtn" onclick="openSearch()">
+                        <i class="fa-solid fa-magnifying-glass animated-icon"></i>
+                    </div>
+                    <a href="">
+                        <i class="fa-brands fa-shopify animated-icon"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-user-plus animated-icon"></i>
+                    </a>
+                    <a href="javascript:void(0);" class="bar-icon" onclick="myFunction()">
+                        <i class="fa-solid fa-bars animated-icon"></i>
+                    </a>
+                </div>
+            </nav>
+        </section>
+        <!-- ----------------NAV BAR---------------------- -->
         <!-- ----------------hero-section---------------------- -->
         <section id="hero-section">
             <img class="main-image" src="/images/about.jpg" alt="">
@@ -61,7 +153,7 @@
             </div>
             <div class="right-container">
                 <div class="director-image">
-                    <iframe width="490" height="335" src="https://www.youtube.com/embed/Amfrm2V_KO0?controls=0"></iframe>
+                    <iframe src="https://www.youtube.com/embed/Amfrm2V_KO0?controls=0"></iframe>
                 </div>
                 <div class="director-text">
                     <h3>Mr. Director of NaN Robotics</h3>
@@ -85,7 +177,7 @@
             <div class="up-container">
                 <div class="circle">
                     <div class="text">
-                        <img src="/images/dots.svg" alt="">
+                        <img class="heading-dots" src="/images/dots.svg" alt="">
                         <img class="rectangle-dots" src="/images/rectangle dots.svg" alt="">
                         <h4>OUR MISSION</h4>
                         <p>
@@ -111,7 +203,7 @@
             <div class="down-container">
                 <div class="circle">
                     <div class="text">
-                        <img src="/images/dots.svg" alt="">
+                        <img class="heading-dots" src="/images/dots.svg" alt="">
                         <img class="rectangle-dots" src="/images/rectangle dots.svg" alt="">
                         <h4>OUR VISION</h4>
                         <p>
@@ -134,7 +226,134 @@
             <div class="hands-right-icon wow zoomInDown">
                 <img src="/images/hands-right-icon.svg" alt="">
             </div>
+            <div class="spark">
+                <img src="/images/spark.svg" alt="">
+            </div>
         </section>
         <!-- ---------------mission-vision----------------- -->
+        <!-- ---------------footer----------------- -->
+        <section id="footer">
+            <footer>
+                <div class="row primary wow fadeInUp">
+                    <div class="column about">
+                        <div class="">
+                            <a href="/index.html">
+                                <img src="/images/logo.png" class="logo">
+                            </a>
+                        </div>
+                        <p>
+                            NaN Robotics Computing was incorporated with the ideology of teaching the young generation about STEM – Robotics, through something they will love, create and play.
+                        </p>
+                        <div class="social">
+                            <i class="fa-brands fa-facebook animated-icon"></i>
+                            <i class="fa-brands fa-instagram animated-icon"></i>
+                            <i class="fa-brands fa-youtube animated-icon"></i>
+                            <i class="fa-brands fa-tiktok animated-icon"></i>
+                            <i class="fa-brands fa-linkedin animated-icon"></i>
+                        </div>
+                    </div>
+                    <div class="column links">
+                        <h3>Fast Links</h3>
+                        <ul>
+                            <li>
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#courses">Courses</a>
+                            </li>
+                            <li>
+                                <a href="#products">Products</a>
+                            </li>
+                            <li>
+                                <a href="#about">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#activities">Activities</a>
+                            </li>
+                            <li>
+                                <a href="#contacts">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column links">
+                        <h3>Contacts</h3>
+                        <ul>
+                            <li>
+                                <div class="location">
+                                    <div class="icon">
+                                        <a href="">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="">Kathmandu, Nepal</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="phone">
+                                    <div class="icon">
+                                        <a href="">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </a>
+                                    </div>
+                                    <div class="text">+977014792020</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="mail">
+                                    <div class="icon">
+                                        <a href="">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <a href="mailto: info@nanrobotics.com">info@nanrobotics.com</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column support">
+                        <h3>Support</h3>
+                        <ul>
+                            <li>
+                                <a href="">Help Center</a>
+                            </li>
+                            <li>
+                                <a href="">History</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="robot">
+                        <img src="/images/footer-robot.png" alt="">
+                    </div>
+                </div>
+                <div class="copyright wow fadeInUp">
+                    <div class="p1">
+                        <p>© Copyright 2023 | All Rights Reserved</p>
+                    </div>
+                    <div class="p2">
+                        <p>
+                            Powered by
+                            <span class="highlight">thamel</span>
+                            .com
+                        </p>
+                    </div>
+                </div>
+                <div id="progress">
+                    <i id="progress-value" class="fa-solid fa-angle-up"></i>
+                </div>
+            </footer>
+        </section>
+        <!-- ---------------footer----------------- -->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
