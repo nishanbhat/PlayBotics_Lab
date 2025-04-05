@@ -1543,7 +1543,7 @@ h2 {
 /* ----------testimonials---------- */
 
 #testimonials {
-  background-image: url("/images/testimonials-bg.png");
+  background-image: url("/testimonials-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2085,7 +2085,7 @@ h2 {
 #footer {
   display: flex;
   align-items: flex-end;
-  background-image: url("/images/footer-bg.png");
+  background-image: url("/footer-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
