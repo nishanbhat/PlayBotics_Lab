@@ -1118,7 +1118,7 @@ iframe {
 #footer {
   display: flex;
   align-items: flex-end;
-  background-image: url("/footer-bg.png");
+  background-image: url("footer-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
